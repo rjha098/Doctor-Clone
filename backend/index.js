@@ -65,4 +65,4 @@ app.get('/', (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => console.log(🚀 Backend running on port ${PORT}));
+app.listen(PORT, () => console.log(`🚀 Backend running on port ${PORT}`));
