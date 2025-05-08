@@ -1,0 +1,132 @@
+.doctor-page {
+  padding: 20px;
+  background-color: #f3f0ff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #3c096c;
+  margin-bottom: 20px;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter-bar label {
+  font-weight: 500;
+  color: #5a189a;
+}
+
+.filter-bar select,
+.filter-bar input {
+  padding: 6px 10px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, #b388ff, #7c4dff);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.filter-bar select:focus,
+.filter-bar input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(122, 80, 182, 0.2);
+}
+
+/* Doctor List */
+.doctor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Card Styling */
+.doctor-card {
+  display: flex;
+  background: linear-gradient(to right, #ffffff, #f3e5f5);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(60, 9, 108, 0.1);
+  width: 100%;
+  max-width: 600px;
+  padding: 16px;
+  gap: 16px;
+  transition: box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+  box-shadow: 0 4px 14px rgba(60, 9, 108, 0.15);
+}
+
+.doctor-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #9d4edd;
+}
+
+.doctor-info {
+  flex-grow: 1;
+}
+
+.doctor-info h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #3c096c;
+}
+
+.specialization {
+  color: #5e548e;
+  margin: 4px 0;
+}
+
+.details,
+.location {
+  color: #7b6d8d;
+  font-size: 13px;
+  margin: 2px 0;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  background: linear-gradient(to right, #7209b7, #560bad);
+  color: white;
+  padding: 8px 14px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: linear-gradient(to right, #560bad, #7209b7);
+  transform: translateY(-1px);
+}
+
+.pagination button:disabled {
+  background: #d1c4e9;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-weight: 500;
+  color: #5a189a;
+}
